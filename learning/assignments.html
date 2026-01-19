@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignments | Elecquip</title>
+</head>
+<body>
+
+  <h2>📝 Assignments</h2>
+
+  <p>Download your assignments below.</p>
+
+  <ul>
+    <li>
+      <a href="../assignments/computer-literacy-assignment-1.pdf" download>
+        Computer Literacy – Assignment 1
+      </a>
+    </li>
+
+    <li>
+      <a href="../assignments/bookkeeping-assignment-1.pdf" download>
+        Book Keeping – Assignment 1
+      </a>
+    </li>
+
+    <li>
+      <a href="../assignments/mathematics-assignment-1.pdf" download>
+        Basic Mathematics – Assignment 1
+      </a>
+    </li>
+  </ul>
+
+  <br>
+  <button onclick="location.href='dashboard.html'">⬅ Back to Dashboard</button>
+
+  <script>
+    // Protect the page
+    if (localStorage.getItem("elecquip_logged_in") !== "yes") {
+      window.location.href = "login.html";
+    }
+  </script>
+
+</body>
+</html>
