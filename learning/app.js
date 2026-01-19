@@ -1,3 +1,5 @@
-function loginStudent() {
-  alert("Login button works");
-}
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("loginBtn").onclick = function () {
+    alert("STEP 1 OK");
+  };
+});
