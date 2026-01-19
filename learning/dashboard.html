@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard | Elecquip</title>
+</head>
+<body>
+
+  <h2 id="welcomeText">Welcome</h2>
+
+  <p>This is your learning dashboard.</p>
+
+  <script>
+    // Protect the page
+    if (localStorage.getItem("elecquip_logged_in") !== "yes") {
+      window.location.href = "login.html";
+    }
+
+    // Show student number
+    var studentNumber = localStorage.getItem("elecquip_student_number");
+    document.getElementById("welcomeText").innerText =
+      "Welcome, Student " + studentNumber;
+  </script>
+
+</body>
+</html>
