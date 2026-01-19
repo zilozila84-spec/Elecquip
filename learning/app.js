@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     localStorage.setItem("elecquip_student_number", studentNumber);
+    localStorage.setItem("elecquip_logged_in", "yes");
 
-    alert("Student number saved: " + studentNumber);
+    // Redirect to dashboard
+    window.location.href = "dashboard.html";
   };
 });
