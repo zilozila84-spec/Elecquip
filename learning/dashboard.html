@@ -6,21 +6,34 @@
 </head>
 <body>
 
-  <h2 id="welcomeText">Welcome</h2>
+<h2 id="welcomeText">Welcome</h2>
 
-  <p>This is your learning dashboard.</p>
+<p>This is your learning dashboard.</p>
 
-  <script>
-    // Protect the page
-    if (localStorage.getItem("elecquip_logged_in") !== "yes") {
-      window.location.href = "login.html";
-    }
+<div style="margin-top:20px;">
+  <button onclick="location.href='resources.html'">📘 Course Resources</button>
+  <br><br>
 
-    // Show student number
-    var studentNumber = localStorage.getItem("elecquip_student_number");
-    document.getElementById("welcomeText").innerText =
-      "Welcome, Student " + studentNumber;
-  </script>
+  <button onclick="location.href='assignments.html'">📝 Assignments</button>
+  <br><br>
+
+  <button onclick="location.href='quiz.html'">🧠 Online Quiz</button>
+  <br><br>
+
+  <button onclick="location.href='submit.html'">📤 Submit Assignment</button>
+</div>
+
+<script>
+  // Protect the page
+  if (localStorage.getItem("elecquip_logged_in") !== "yes") {
+    window.location.href = "login.html";
+  }
+
+  // Show student number
+  var studentNumber = localStorage.getItem("elecquip_student_number");
+  document.getElementById("welcomeText").innerText =
+    "Welcome, Student " + studentNumber;
+</script>
 
 </body>
 </html>
